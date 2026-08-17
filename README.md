@@ -1,6 +1,6 @@
-# Race Start — privacy policy
+# Fleet Start — privacy policy
 
-This repository exists only to publish the privacy policy for the **Race Start**
+This repository exists only to publish the privacy policy for the **Fleet Start**
 iOS and Android app at a public URL, as required by the App Store and Google Play.
 
 The page is served at
