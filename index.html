@@ -48,8 +48,9 @@
 
   <h2>What we do not collect</h2>
   <p>Fleet Start does not ask for, collect, or store your name, email address,
-     phone number, contacts, or photos. There are no advertising identifiers,
-     no analytics or tracking SDKs, and no third-party ad networks.</p>
+     phone number, or contacts, and has no access to your photo library. There
+     are no advertising identifiers, no analytics or tracking SDKs, and no
+     third-party ad networks.</p>
 
   <p>The app can ask for your location, but only for the start-line tool
      described below, and your position never leaves your phone.</p>
@@ -68,11 +69,27 @@
     <li>the race name and optional class or fleet name entered by the officer</li>
     <li>the chosen start sequence and class flag</li>
     <li>the scheduled start time and the current race status</li>
+    <li>if the officer chooses a picture as the class flag, that picture</li>
   </ul>
   <p>This information is visible to anyone using the app, because the list of
      active races is public by design so sailors can join easily. Do not enter
-     personal information in the race or class name.</p>
+     personal information in the race or class name, and do not choose a
+     personal photograph as a class flag.</p>
   <p>Practice mode runs entirely on your device and stores nothing.</p>
+
+  <h2>Class flag pictures</h2>
+  <p>A race officer can supply a picture to use as the class flag — normally a
+     class insignia, because we do not ship artwork for classes whose emblems
+     we have no licence to redistribute.</p>
+  <p>The app does not read your photo library. It uses the system photo picker,
+     which runs outside the app and hands back only the single file you choose,
+     so Fleet Start never has access to any other photo. That one picture is
+     scaled down, stored with the race, and shown to everyone who joins it —
+     treat it as public, and pick an insignia rather than a personal
+     photograph.</p>
+  <p>The picture is re-encoded before it is stored, which discards any
+     metadata the original carried, including the location where a photo was
+     taken. Only the image itself is kept.</p>
 
   <h2>Location</h2>
   <p>If the race officer switches on the start-line tool for a race, the app
