@@ -147,11 +147,22 @@
      and sounds all work without it.</p>
 
   <h2>Data retention</h2>
-  <p>Race data, including any starting-list entries, is transient and relates
-     only to a race in progress. Races older than 48 hours are hidden from the
-     app. You can delete your own starting-list entry at any time from the
-     starting-list screen, and deleting it removes it immediately rather than
-     hiding it.</p>
+  <p>Race data — the race itself, any starting-list entries and any finishing
+     orders — is kept for <strong>30 days</strong> and then deleted.</p>
+  <p>Two different ages, deliberately:</p>
+  <ul>
+    <li>After <strong>48 hours</strong> a race drops off the list of races in
+    the app. It is not deleted at this point: it stays reachable by its
+    6-character code, so a race officer can still get a finishing order out of
+    it.</li>
+    <li>After <strong>30 days</strong> the race and everything in it is deleted
+    outright.</li>
+  </ul>
+  <p>You do not have to wait for either. A sailor can delete their own
+     starting-list entry at any time with <strong>Remove me</strong>, and a race
+     officer can delete a whole race — starting list and finishing orders
+     included — from the race menu. Both delete immediately rather than hiding
+     anything.</p>
 
   <h2>Data processors</h2>
   <p>Google Firebase (Authentication and Realtime Database) processes this
@@ -171,7 +182,9 @@
      tied to you, so there is nothing to request, export, or delete. Deleting
      the app removes the anonymous identifier and the remembered sail number
      from your device.</p>
-  <p>If you want an entry removed and cannot do it yourself, write to the
+  <p>The race officer can also delete the whole race, which removes the
+     starting list and any finishing orders with it. If you want something
+     removed and cannot do it yourself, ask the race officer, or write to the
      address below with the race code and the sail number.</p>
 
   <h2>Contact</h2>
