@@ -41,7 +41,7 @@
   </div>
 </header>
 <main class="wrap">
-  <p class="meta">Last updated: 2 September 2026</p>
+  <p class="meta">Last updated: 25 September 2026</p>
 
   <p>Fleet Start is a sailing race start timer. This policy explains exactly
      what the app does and does not collect.</p>
@@ -52,12 +52,11 @@
      are no advertising identifiers, no analytics or tracking SDKs, and no
      third-party ad networks. You never create an account.</p>
 
-  <p>The one thing you can choose to give us is a sail number, described under
-     <strong>Starting list</strong> below. It is optional, and it is the only
-     place the app stores something you have typed about yourself.</p>
-
-  <p>The app can ask for your location, but only for the start-line tool
-     described below, and your position never leaves your phone.</p>
+  <p>Two things you can choose to give us: a sail number, described under
+     <strong>Starting list</strong> below, and — if your race officer allows it
+     and you say yes — a recording of where your boat sailed, described under
+     <strong>Location and tracks</strong>. Both are optional, and both are off
+     unless you choose them.</p>
 
   <h2>Anonymous sign-in</h2>
   <p>To keep races in sync, the app signs you in anonymously using Firebase
@@ -151,16 +150,53 @@
   <p>The app records the order and nothing else. It does not calculate points,
      series standings, or handicap-corrected times.</p>
 
-  <h2>Location</h2>
-  <p>If the race officer switches on the start-line tool for a race, the app
-     asks for permission to use your location while you are using it. Your
-     position is used on your own phone to work out where the start line is
-     and how far you are from it. It is never sent to our servers, never
-     stored, and never shared: it is not written to the race database or
-     anywhere else off your device.</p>
-  <p>The tool is off unless the race officer turns it on for that race, and
-     you can decline the location permission — the countdown, signals, flags
-     and sounds all work without it.</p>
+  <h2>Location and tracks</h2>
+  <p>The app uses your location for three different things. One stays on your
+     phone; the other two only happen if you ask for them.</p>
+  <p><strong>Working out your distance to the line stays on your phone.</strong>
+     If the race officer switches the start-line tool on for a race, the app
+     uses your position to work out where you are relative to the line. That
+     calculation happens on your own device, and your own position is never
+     sent to our servers.</p>
+  <p><strong>Pinging a mark shares that mark with the race.</strong> In the
+     same tool you can ping the two ends of the start line and the windward
+     mark, so everyone in the race sees the same course and a replay can draw
+     it. Each ping stores that position with the race, along with an anonymous
+     id for whoever pinged it and the time. These are the positions of the
+     marks, not a record of where you sailed — but you are at the mark when
+     you press the button, so a ping does say where you were at that moment.
+     Nothing is pinged unless you press it.</p>
+  <p><strong>Your track is recorded only if you say yes, and shared only after
+     the race.</strong> If the race officer turns on track recording for a
+     race, the app asks you — before the start, on the race screen — whether to
+     record your own track. If you say yes:</p>
+  <ul>
+    <li>Your position is recorded about once a second <strong>while the race
+        screen is open</strong>. The app does not use your location in the
+        background, and does not follow you when the app is closed or put
+        away.</li>
+    <li>The recording is kept <strong>on your phone</strong> for the whole
+        race. Nothing is sent anywhere while any boat is still racing.</li>
+    <li><strong>When the race is finished</strong>, a reduced version of the
+        track is published with the race, so that people can compare
+        afterwards. Races in Fleet Start are public: anyone using the app can
+        open the race and see your track next to your sail number. It is not
+        limited to the boats that sailed in it.</li>
+    <li>The upload is thinned before it is sent: it keeps the shape of where
+        you sailed and your speed, not every last fix.</li>
+  </ul>
+  <p>If you say no, nothing is recorded and nothing is uploaded. You are asked
+     once per race, and you can change your mind at any time from the race
+     menu.</p>
+  <p><strong>Taking a track back.</strong> <em>Remove my published track</em> in
+     the race menu deletes it from our servers. Deleting the app removes
+     anything still held only on your phone.</p>
+  <p>A track is the most detailed thing this app can hold about you: where you
+     were, when, and how fast. That is why it takes two separate decisions —
+     the race officer's and yours — and why nothing leaves your phone until the
+     racing is over.</p>
+  <p>You can decline the location permission entirely. The countdown, signals,
+     flags and sounds all work without it.</p>
 
   <h2>Data retention</h2>
   <p>Race data — the race itself, any starting-list entries and any finishing
